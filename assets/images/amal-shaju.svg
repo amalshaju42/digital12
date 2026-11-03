@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141D38" />
+      <stop offset="100%" stop-color="#0B1020" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#bg)" />
+  <circle cx="300" cy="270" r="140" fill="url(#glow)" opacity="0.25" />
+  <circle cx="300" cy="250" r="90" fill="#1C284D" stroke="#A78BFA" stroke-width="2.5" />
+  <!-- Head & Body Icon -->
+  <path d="M300 190 A 45 45 0 0 0 300 280 A 45 45 0 0 0 300 190 Z" fill="#A78BFA" opacity="0.9" />
+  <path d="M210 390 C210 320, 390 320, 390 390 Z" fill="#7C3AED" opacity="0.8" />
+  <!-- Text -->
+  <text x="300" y="470" font-family="'Syne', sans-serif" font-size="28" font-weight="bold" fill="#F8FAFC" text-anchor="middle">Amal Shaju</text>
+  <text x="300" y="510" font-family="'DM Sans', sans-serif" font-size="16" fill="#A78BFA" text-anchor="middle">Freelance Digital Marketer • Kannur</text>
+  <text x="300" y="560" font-family="'DM Sans', sans-serif" font-size="14" fill="#F8FAFC" opacity="0.8" text-anchor="middle">Amal Shaju Portfolio</text>
+</svg>
