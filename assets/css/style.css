@@ -413,3 +413,89 @@ input:focus, select:focus, textarea:focus {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* Photo-free hero profile panel */
+.hero-profile-panel {
+  min-height: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  isolation: isolate;
+  background:
+    linear-gradient(145deg, rgba(30, 23, 55, .97), rgba(13, 17, 34, .98) 65%),
+    var(--surface);
+  border: 1px solid rgba(167, 139, 250, .28);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255,255,255,.05);
+}
+.hero-profile-orb {
+  position: absolute;
+  z-index: -1;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  filter: blur(75px);
+  opacity: .22;
+  pointer-events: none;
+}
+.hero-profile-orb-one {
+  top: -8rem;
+  left: -6rem;
+  background: #8b5cf6;
+}
+.hero-profile-orb-two {
+  right: -7rem;
+  bottom: -8rem;
+  background: #2563eb;
+}
+.hero-monogram {
+  width: 7.25rem;
+  height: 7.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.35rem;
+  font-weight: 700;
+  letter-spacing: -.08em;
+  background: linear-gradient(135deg, #8b5cf6, #6d5dfc 52%, #2563eb);
+  border: 1px solid rgba(255,255,255,.2);
+  box-shadow: 0 18px 42px rgba(109, 93, 252, .25);
+}
+.hero-skill-pill {
+  padding: .48rem .75rem;
+  border: 1px solid rgba(196, 181, 253, .2);
+  border-radius: 999px;
+  background: rgba(139, 92, 246, .1);
+  color: #e4ddff;
+  font-size: .72rem;
+  font-weight: 600;
+}
+.hero-service-tile {
+  min-width: 0;
+  padding: 1.05rem;
+  border: 1px solid rgba(208, 196, 255, .15);
+  border-radius: 1rem;
+  background: rgba(8, 8, 20, .42);
+}
+.hero-service-icon {
+  width: 2.65rem;
+  height: 2.65rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid;
+  border-radius: .85rem;
+}
+@media (max-width: 640px) {
+  .hero-profile-panel {
+    min-height: auto;
+    padding: 1.4rem;
+  }
+  .hero-monogram {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1.65rem;
+    font-size: 2rem;
+  }
+}
