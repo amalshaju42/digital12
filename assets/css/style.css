@@ -413,3 +413,51 @@ input:focus, select:focus, textarea:focus {
     scroll-behavior: auto !important;
   }
 }
+
+/* Reliable continuous service-text marquee */
+.service-marquee {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.service-marquee-track {
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  animation: service-marquee-scroll 28s linear infinite !important;
+}
+.service-marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 2.75rem;
+  padding-right: 2.75rem;
+  white-space: nowrap;
+}
+.service-marquee-group > * {
+  flex: 0 0 auto;
+}
+.service-marquee:hover .service-marquee-track {
+  animation-play-state: paused !important;
+}
+@keyframes service-marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+@media (max-width: 640px) {
+  .service-marquee-group {
+    gap: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .service-marquee-track {
+    animation-duration: 22s !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .service-marquee-track {
+    animation: none !important;
+    transform: none;
+  }
+}
