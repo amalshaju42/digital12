@@ -301,7 +301,6 @@ body {
   background-image:
     linear-gradient(to right, rgba(196, 181, 253, .035) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(196, 181, 253, .035) 1px, transparent 1px);
-  mask-image: linear-gradient(to bottom, black 0%, rgba(0,0,0,.7) 65%, transparent 100%);
 }
 
 .skill-badge {
@@ -372,5 +371,57 @@ section[id] {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
+  }
+}
+
+
+/* HERO READABILITY FIX
+   Keep decorative grid on the background only.
+   Never apply a mask to the hero content container. */
+#home.bg-grid-pattern {
+  position: relative;
+  isolation: isolate;
+  background-color: transparent;
+  background-image:
+    radial-gradient(ellipse at 12% 12%, rgba(124, 58, 237, .15), transparent 34rem),
+    radial-gradient(ellipse at 88% 42%, rgba(79, 70, 229, .10), transparent 36rem),
+    linear-gradient(to right, rgba(196, 181, 253, .035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(196, 181, 253, .035) 1px, transparent 1px);
+  background-size: auto, auto, 40px 40px, 40px 40px;
+}
+
+#home .text-slate-300 { color: #d1d5e1; }
+#home .text-slate-400 { color: #b8bfd0; }
+#home .glass-card {
+  background: rgba(22, 18, 39, .94);
+  border-color: rgba(167, 139, 250, .24);
+}
+
+#home .social-icon-btn {
+  color: #f1effa;
+  background: rgba(139, 92, 246, .12);
+  border-color: rgba(167, 139, 250, .28);
+}
+
+#home .social-icon-btn:hover {
+  background: rgba(139, 92, 246, .24);
+  border-color: rgba(196, 181, 253, .6);
+}
+
+#home a:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  #home {
+    padding-top: 7.5rem;
+    padding-bottom: 4.5rem;
+  }
+  #home .text-gradient-purple {
+    display: inline-block;
+  }
+  #home .social-icon-btn {
+    min-height: 2.75rem;
   }
 }
