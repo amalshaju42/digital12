@@ -252,61 +252,41 @@
 
           </div>
 
-          <!-- Right Column: Visual Portrait Card -->
+          <!-- Right Column: Photo-free personal brand panel -->
           <div class="lg:col-span-5 flex justify-center relative">
-            
-            <div class="relative w-full max-w-md">
-              <!-- Glow backdrop behind card -->
-              <div class="absolute -inset-1.5 bg-gradient-to-tr from-indigo-500 via-purple-500 to-cyan-400 rounded-3xl blur-xl opacity-40 animate-pulse"></div>
+            <div class="hero-profile-panel relative w-full max-w-md rounded-[2rem] overflow-hidden p-7 sm:p-9">
+              <div class="hero-profile-orb hero-profile-orb-one" aria-hidden="true"></div>
+              <div class="hero-profile-orb hero-profile-orb-two" aria-hidden="true"></div>
 
-              <!-- Main Photo Card -->
-              <div class="relative rounded-3xl overflow-hidden glass-card border border-white/10 p-3 shadow-2xl bg-gradient-to-b from-[#131e36]/90 to-[#090d16]/90">
-                <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-900">
-                  <img src="assets/images/amal-shaju-hero.jpg" alt="Amal Shaju - Freelance Digital Marketer in Kannur" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='assets/images/amal-shaju-about.jpg';">
-                  
-                  <!-- Gradient overlay at bottom of photo -->
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80"></div>
+              <div class="relative z-10 flex flex-col items-center text-center py-8 sm:py-10">
+                <div class="hero-monogram mb-6" aria-hidden="true">AS</div>
+                <p class="text-xs sm:text-sm font-semibold uppercase tracking-[.24em] text-violet-200 mb-3">Digital Marketing Portfolio</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Amal Shaju</h2>
+                <p class="text-sm sm:text-base text-slate-300 mt-3 max-w-xs">SEO &amp; Meta Ads Digital Marketer</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-7">
+                  <span class="hero-skill-pill">Search Engine Optimization</span>
+                  <span class="hero-skill-pill">Meta Advertising</span>
+                  <span class="hero-skill-pill">Lead Generation</span>
+                </div>
+              </div>
 
-                  <!-- Text label on bottom of portrait -->
-                  <div class="absolute bottom-4 left-4 right-4">
-                    <div class="glass-card p-3 rounded-xl border border-white/10 flex items-center justify-between">
-                      <div>
-                        <h2 class="text-sm font-bold text-white">Amal Shaju</h2>
-                        <p class="text-xs text-indigo-300">Digital Marketing Specialist</p>
-                      </div>
-                      <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
-                        <i data-lucide="trending-up" class="w-3.5 h-3.5"></i>
-                        ROI Focused
-                      </span>
-                    </div>
+              <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+                <div class="hero-service-tile">
+                  <div class="hero-service-icon text-violet-200 bg-violet-400/10 border-violet-300/20">
+                    <i data-lucide="search" class="w-5 h-5"></i>
                   </div>
+                  <p class="text-[11px] font-semibold uppercase tracking-wider text-violet-200 mt-3">SEO Strategy</p>
+                  <p class="text-sm font-bold text-white mt-1">Organic Search Growth</p>
+                </div>
+                <div class="hero-service-tile">
+                  <div class="hero-service-icon text-cyan-200 bg-cyan-400/10 border-cyan-300/20">
+                    <i data-lucide="target" class="w-5 h-5"></i>
+                  </div>
+                  <p class="text-[11px] font-semibold uppercase tracking-wider text-cyan-200 mt-3">Meta Ads Strategy</p>
+                  <p class="text-sm font-bold text-white mt-1">Targeted Lead Generation</p>
                 </div>
               </div>
-
-              <!-- Floating Metric Badge 1: SEO Ranking -->
-              <div class="absolute -top-6 -left-6 sm:-left-8 glass-card p-3.5 rounded-2xl border border-indigo-500/30 shadow-xl shadow-black/50 animate-float flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
-                  <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Search Engine SEO</p>
-                  <p class="text-sm font-bold text-white">+240% Organic Traffic</p>
-                </div>
-              </div>
-
-              <!-- Floating Metric Badge 2: Meta Ads Conversion -->
-              <div class="absolute -bottom-6 -right-4 sm:-right-6 glass-card p-3.5 rounded-2xl border border-cyan-500/30 shadow-xl shadow-black/50 animate-float-delayed flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-                  <i data-lucide="target" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Meta Ads Strategy</p>
-                  <p class="text-sm font-bold text-white">Targeted Lead Generation</p>
-                </div>
-              </div>
-
             </div>
-
           </div>
 
         </div>
